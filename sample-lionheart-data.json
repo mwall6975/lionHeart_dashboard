@@ -1,0 +1,6466 @@
+[
+  {
+    "sessionId": "2026-01-07_1215:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "maximus",
+      "displayName": "MAXIMUS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Jan 7, 2026 | 12:15pm",
+      "date": "2026-01-07",
+      "time": "12:15:00",
+      "timestamp": 1767816900,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 51.6,
+      "heartrate": {
+        "average": 126,
+        "max": 146
+      },
+      "estimatedCalories": 482,
+      "trackedDurationInSeconds": 2656
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 1032,
+            "label": "17:12"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 505,
+            "label": "8:25"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 451,
+            "label": "7:31"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 356,
+            "label": "5:56"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 312,
+            "label": "5:12"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-01-09_0930:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "medusa",
+      "displayName": "MEDUSA",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Jan 9, 2026 | 9:30am",
+      "date": "2026-01-09",
+      "time": "09:30:00",
+      "timestamp": 1767979800,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 53.5,
+      "heartrate": {
+        "average": 149,
+        "max": 171
+      },
+      "estimatedCalories": 433,
+      "trackedDurationInSeconds": 2619
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 912,
+            "label": "15:12"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 562,
+            "label": "9:22"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 398,
+            "label": "6:38"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 587,
+            "label": "9:47"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 160,
+            "label": "2:40"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-01-16_0630:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "doubledown",
+      "displayName": "DOUBLE DOWN",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Jan 16, 2026 | 6:30am",
+      "date": "2026-01-16",
+      "time": "06:30:00",
+      "timestamp": 1768573800,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 37.8,
+      "heartrate": {
+        "average": 146,
+        "max": 165
+      },
+      "estimatedCalories": 623,
+      "trackedDurationInSeconds": 2550
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 811,
+            "label": "13:31"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 572,
+            "label": "9:32"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 564,
+            "label": "9:24"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 358,
+            "label": "5:58"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 245,
+            "label": "4:05"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-01-21_0615:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "wingman",
+      "displayName": "WINGMAN",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Jan 21, 2026 | 6:15am",
+      "date": "2026-01-21",
+      "time": "06:15:00",
+      "timestamp": 1769004900,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 46.4,
+      "heartrate": {
+        "average": 118,
+        "max": 142
+      },
+      "estimatedCalories": 572,
+      "trackedDurationInSeconds": 2514
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 610,
+            "label": "10:10"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 557,
+            "label": "9:17"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 592,
+            "label": "9:52"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 473,
+            "label": "7:53"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 282,
+            "label": "4:42"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-01-26_0930:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "allstar",
+      "displayName": "ALL STAR",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Jan 26, 2026 | 9:30am",
+      "date": "2026-01-26",
+      "time": "09:30:00",
+      "timestamp": 1769448600,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 51.8,
+      "heartrate": {
+        "average": 136,
+        "max": 158
+      },
+      "estimatedCalories": 757,
+      "trackedDurationInSeconds": 2588
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 870,
+            "label": "14:30"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 768,
+            "label": "12:48"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 623,
+            "label": "10:23"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 282,
+            "label": "4:42"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 45,
+            "label": "0:45"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-01-28_0615:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "doubledown",
+      "displayName": "DOUBLE DOWN",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Jan 28, 2026 | 6:15am",
+      "date": "2026-01-28",
+      "time": "06:15:00",
+      "timestamp": 1769609700,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 40.9,
+      "heartrate": {
+        "average": 148,
+        "max": 180
+      },
+      "estimatedCalories": 591,
+      "trackedDurationInSeconds": 2445
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 722,
+            "label": "12:02"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 802,
+            "label": "13:22"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 501,
+            "label": "8:21"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 297,
+            "label": "4:57"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 123,
+            "label": "2:03"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-01-30_1830:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "doubledown",
+      "displayName": "DOUBLE DOWN",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Jan 30, 2026 | 6:30pm",
+      "date": "2026-01-30",
+      "time": "18:30:00",
+      "timestamp": 1769826600,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 41.0,
+      "heartrate": {
+        "average": 149,
+        "max": 173
+      },
+      "estimatedCalories": 615,
+      "trackedDurationInSeconds": 2630
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 1004,
+            "label": "16:44"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 552,
+            "label": "9:12"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 439,
+            "label": "7:19"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 304,
+            "label": "5:04"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 331,
+            "label": "5:31"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-02-02_1800:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "medusa",
+      "displayName": "MEDUSA",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Feb 2, 2026 | 6:00pm",
+      "date": "2026-02-02",
+      "time": "18:00:00",
+      "timestamp": 1770084000,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 58.9,
+      "heartrate": {
+        "average": 136,
+        "max": 160
+      },
+      "estimatedCalories": 735,
+      "trackedDurationInSeconds": 2572
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 912,
+            "label": "15:12"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 696,
+            "label": "11:36"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 293,
+            "label": "4:53"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 423,
+            "label": "7:03"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 248,
+            "label": "4:08"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-02-04_1200:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "doubledown",
+      "displayName": "DOUBLE DOWN",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Feb 4, 2026 | 12:00pm",
+      "date": "2026-02-04",
+      "time": "12:00:00",
+      "timestamp": 1770235200,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 46.4,
+      "heartrate": {
+        "average": 130,
+        "max": 154
+      },
+      "estimatedCalories": 510,
+      "trackedDurationInSeconds": 2566
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 947,
+            "label": "15:47"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 680,
+            "label": "11:20"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 483,
+            "label": "8:03"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 218,
+            "label": "3:38"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 238,
+            "label": "3:58"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-02-06_0920:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "fiftyfifty",
+      "displayName": "FIFTY FIFTY",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Feb 6, 2026 | 9:20am",
+      "date": "2026-02-06",
+      "time": "09:20:00",
+      "timestamp": 1770398400,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 57.1,
+      "heartrate": {
+        "average": 122,
+        "max": 148
+      },
+      "estimatedCalories": 701,
+      "trackedDurationInSeconds": 2535
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 760,
+            "label": "12:40"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 432,
+            "label": "7:12"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 458,
+            "label": "7:38"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 568,
+            "label": "9:28"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 317,
+            "label": "5:17"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-02-09_1800:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "allstar",
+      "displayName": "ALL STAR",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Feb 9, 2026 | 6:00pm",
+      "date": "2026-02-09",
+      "time": "18:00:00",
+      "timestamp": 1770688800,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 54.8,
+      "heartrate": {
+        "average": 117,
+        "max": 146
+      },
+      "estimatedCalories": 678,
+      "trackedDurationInSeconds": 2636
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 651,
+            "label": "10:51"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 672,
+            "label": "11:12"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 598,
+            "label": "9:58"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 331,
+            "label": "5:31"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 384,
+            "label": "6:24"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-02-11_1815:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "fiftyfifty",
+      "displayName": "FIFTY FIFTY",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Feb 11, 2026 | 6:15pm",
+      "date": "2026-02-11",
+      "time": "18:15:00",
+      "timestamp": 1770862500,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 58.9,
+      "heartrate": {
+        "average": 157,
+        "max": 179
+      },
+      "estimatedCalories": 634,
+      "trackedDurationInSeconds": 2509
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 860,
+            "label": "14:20"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 719,
+            "label": "11:59"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 428,
+            "label": "7:08"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 325,
+            "label": "5:25"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 177,
+            "label": "2:57"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-02-13_1815:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "allstar",
+      "displayName": "ALL STAR",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Feb 13, 2026 | 6:15pm",
+      "date": "2026-02-13",
+      "time": "18:15:00",
+      "timestamp": 1771035300,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 37.4,
+      "heartrate": {
+        "average": 112,
+        "max": 131
+      },
+      "estimatedCalories": 753,
+      "trackedDurationInSeconds": 2666
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 984,
+            "label": "16:24"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 775,
+            "label": "12:55"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 350,
+            "label": "5:50"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 285,
+            "label": "4:45"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 272,
+            "label": "4:32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-02-16_1830:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "zeus",
+      "displayName": "ZEUS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Feb 16, 2026 | 6:30pm",
+      "date": "2026-02-16",
+      "time": "18:30:00",
+      "timestamp": 1771295400,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 54.6,
+      "heartrate": {
+        "average": 127,
+        "max": 157
+      },
+      "estimatedCalories": 672,
+      "trackedDurationInSeconds": 2603
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 612,
+            "label": "10:12"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 742,
+            "label": "12:22"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 498,
+            "label": "8:18"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 382,
+            "label": "6:22"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 369,
+            "label": "6:09"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-02-20_0630:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "hammer",
+      "displayName": "HAMMER",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Feb 20, 2026 | 6:30am",
+      "date": "2026-02-20",
+      "time": "06:30:00",
+      "timestamp": 1771597800,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 41.7,
+      "heartrate": {
+        "average": 158,
+        "max": 181
+      },
+      "estimatedCalories": 485,
+      "trackedDurationInSeconds": 2603
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 877,
+            "label": "14:37"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 498,
+            "label": "8:18"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 435,
+            "label": "7:15"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 412,
+            "label": "6:52"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 381,
+            "label": "6:21"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-02-25_0600:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "hammer",
+      "displayName": "HAMMER",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Feb 25, 2026 | 6:00am",
+      "date": "2026-02-25",
+      "time": "06:00:00",
+      "timestamp": 1772028000,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 39.8,
+      "heartrate": {
+        "average": 117,
+        "max": 149
+      },
+      "estimatedCalories": 551,
+      "trackedDurationInSeconds": 2452
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 748,
+            "label": "12:28"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 761,
+            "label": "12:41"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 657,
+            "label": "10:57"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 251,
+            "label": "4:11"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 35,
+            "label": "0:35"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-02-27_1230:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "apollo",
+      "displayName": "APOLLO",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Feb 27, 2026 | 12:30pm",
+      "date": "2026-02-27",
+      "time": "12:30:00",
+      "timestamp": 1772224200,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 51.2,
+      "heartrate": {
+        "average": 156,
+        "max": 185
+      },
+      "estimatedCalories": 714,
+      "trackedDurationInSeconds": 2451
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 594,
+            "label": "9:54"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 519,
+            "label": "8:39"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 695,
+            "label": "11:35"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 416,
+            "label": "6:56"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 227,
+            "label": "3:47"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-03-02_0630:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "pegasus",
+      "displayName": "PEGASUS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Mar 2, 2026 | 6:30am",
+      "date": "2026-03-02",
+      "time": "06:30:00",
+      "timestamp": 1772461800,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 39.6,
+      "heartrate": {
+        "average": 144,
+        "max": 176
+      },
+      "estimatedCalories": 701,
+      "trackedDurationInSeconds": 2440
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 632,
+            "label": "10:32"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 534,
+            "label": "8:54"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 626,
+            "label": "10:26"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 515,
+            "label": "8:35"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 133,
+            "label": "2:13"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-03-06_1800:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "allstar",
+      "displayName": "ALL STAR",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Mar 6, 2026 | 6:00pm",
+      "date": "2026-03-06",
+      "time": "18:00:00",
+      "timestamp": 1772848800,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 51.1,
+      "heartrate": {
+        "average": 151,
+        "max": 170
+      },
+      "estimatedCalories": 644,
+      "trackedDurationInSeconds": 2539
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 999,
+            "label": "16:39"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 479,
+            "label": "7:59"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 600,
+            "label": "10:00"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 286,
+            "label": "4:46"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 175,
+            "label": "2:55"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-03-09_1720:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "wingman",
+      "displayName": "WINGMAN",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Mar 9, 2026 | 5:20pm",
+      "date": "2026-03-09",
+      "time": "17:20:00",
+      "timestamp": 1773102000,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 50.3,
+      "heartrate": {
+        "average": 116,
+        "max": 134
+      },
+      "estimatedCalories": 664,
+      "trackedDurationInSeconds": 2649
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 621,
+            "label": "10:21"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 542,
+            "label": "9:02"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 476,
+            "label": "7:56"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 622,
+            "label": "10:22"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 388,
+            "label": "6:28"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-03-11_1215:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "reddiamond",
+      "displayName": "RED DIAMOND",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Mar 11, 2026 | 12:15pm",
+      "date": "2026-03-11",
+      "time": "12:15:00",
+      "timestamp": 1773256500,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 52.2,
+      "heartrate": {
+        "average": 140,
+        "max": 171
+      },
+      "estimatedCalories": 708,
+      "trackedDurationInSeconds": 2696
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 841,
+            "label": "14:01"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 622,
+            "label": "10:22"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 667,
+            "label": "11:07"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 228,
+            "label": "3:48"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 338,
+            "label": "5:38"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-03-13_1815:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "hammer",
+      "displayName": "HAMMER",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Mar 13, 2026 | 6:15pm",
+      "date": "2026-03-13",
+      "time": "18:15:00",
+      "timestamp": 1773450900,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 40.8,
+      "heartrate": {
+        "average": 129,
+        "max": 151
+      },
+      "estimatedCalories": 739,
+      "trackedDurationInSeconds": 2525
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 638,
+            "label": "10:38"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 692,
+            "label": "11:32"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 436,
+            "label": "7:16"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 393,
+            "label": "6:33"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 366,
+            "label": "6:06"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-03-16_1720:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "pinnacle",
+      "displayName": "PINNACLE",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Mar 16, 2026 | 5:20pm",
+      "date": "2026-03-16",
+      "time": "17:20:00",
+      "timestamp": 1773706800,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 53.7,
+      "heartrate": {
+        "average": 114,
+        "max": 132
+      },
+      "estimatedCalories": 600,
+      "trackedDurationInSeconds": 2566
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 679,
+            "label": "11:19"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 664,
+            "label": "11:04"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 675,
+            "label": "11:15"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 465,
+            "label": "7:45"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 83,
+            "label": "1:23"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-03-18_1800:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "zeus",
+      "displayName": "ZEUS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Mar 18, 2026 | 6:00pm",
+      "date": "2026-03-18",
+      "time": "18:00:00",
+      "timestamp": 1773882000,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 39.4,
+      "heartrate": {
+        "average": 135,
+        "max": 162
+      },
+      "estimatedCalories": 712,
+      "trackedDurationInSeconds": 2635
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 592,
+            "label": "9:52"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 608,
+            "label": "10:08"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 754,
+            "label": "12:34"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 628,
+            "label": "10:28"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 53,
+            "label": "0:53"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-03-20_0620:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "allstar",
+      "displayName": "ALL STAR",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Mar 20, 2026 | 6:20am",
+      "date": "2026-03-20",
+      "time": "06:20:00",
+      "timestamp": 1774012800,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 58.4,
+      "heartrate": {
+        "average": 147,
+        "max": 179
+      },
+      "estimatedCalories": 638,
+      "trackedDurationInSeconds": 2621
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 1053,
+            "label": "17:33"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 523,
+            "label": "8:43"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 408,
+            "label": "6:48"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 533,
+            "label": "8:53"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 104,
+            "label": "1:44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-03-23_1230:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "titans",
+      "displayName": "TITANS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Mar 23, 2026 | 12:30pm",
+      "date": "2026-03-23",
+      "time": "12:30:00",
+      "timestamp": 1774294200,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 42.1,
+      "heartrate": {
+        "average": 154,
+        "max": 185
+      },
+      "estimatedCalories": 557,
+      "trackedDurationInSeconds": 2645
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 838,
+            "label": "13:58"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 475,
+            "label": "7:55"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 592,
+            "label": "9:52"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 318,
+            "label": "5:18"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 422,
+            "label": "7:02"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-03-25_0900:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "allstar",
+      "displayName": "ALL STAR",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Mar 25, 2026 | 9:00am",
+      "date": "2026-03-25",
+      "time": "09:00:00",
+      "timestamp": 1774454400,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 43.6,
+      "heartrate": {
+        "average": 154,
+        "max": 175
+      },
+      "estimatedCalories": 634,
+      "trackedDurationInSeconds": 2665
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 956,
+            "label": "15:56"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 483,
+            "label": "8:03"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 538,
+            "label": "8:58"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 328,
+            "label": "5:28"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 360,
+            "label": "6:00"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-03-27_0620:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "maximus",
+      "displayName": "MAXIMUS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Mar 27, 2026 | 6:20am",
+      "date": "2026-03-27",
+      "time": "06:20:00",
+      "timestamp": 1774617600,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 36.9,
+      "heartrate": {
+        "average": 123,
+        "max": 150
+      },
+      "estimatedCalories": 565,
+      "trackedDurationInSeconds": 2478
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 668,
+            "label": "11:08"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 713,
+            "label": "11:53"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 472,
+            "label": "7:52"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 552,
+            "label": "9:12"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 73,
+            "label": "1:13"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-03-30_1200:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "fiftyfifty",
+      "displayName": "FIFTY FIFTY",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Mar 30, 2026 | 12:00pm",
+      "date": "2026-03-30",
+      "time": "12:00:00",
+      "timestamp": 1774897200,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 48.0,
+      "heartrate": {
+        "average": 157,
+        "max": 181
+      },
+      "estimatedCalories": 430,
+      "trackedDurationInSeconds": 2600
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 844,
+            "label": "14:04"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 502,
+            "label": "8:22"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 695,
+            "label": "11:35"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 385,
+            "label": "6:25"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 174,
+            "label": "2:54"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-04-01_1820:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "wingman",
+      "displayName": "WINGMAN",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Apr 1, 2026 | 6:20pm",
+      "date": "2026-04-01",
+      "time": "18:20:00",
+      "timestamp": 1775092800,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 45.3,
+      "heartrate": {
+        "average": 154,
+        "max": 178
+      },
+      "estimatedCalories": 597,
+      "trackedDurationInSeconds": 2549
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 819,
+            "label": "13:39"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 484,
+            "label": "8:04"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 592,
+            "label": "9:52"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 347,
+            "label": "5:47"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 307,
+            "label": "5:07"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-04-03_1700:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "wingman",
+      "displayName": "WINGMAN",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Apr 3, 2026 | 5:00pm",
+      "date": "2026-04-03",
+      "time": "17:00:00",
+      "timestamp": 1775260800,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 45.9,
+      "heartrate": {
+        "average": 131,
+        "max": 153
+      },
+      "estimatedCalories": 537,
+      "trackedDurationInSeconds": 2536
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 774,
+            "label": "12:54"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 600,
+            "label": "10:00"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 414,
+            "label": "6:54"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 385,
+            "label": "6:25"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 363,
+            "label": "6:03"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-04-06_0620:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "titans",
+      "displayName": "TITANS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Apr 6, 2026 | 6:20am",
+      "date": "2026-04-06",
+      "time": "06:20:00",
+      "timestamp": 1775481600,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 50.2,
+      "heartrate": {
+        "average": 144,
+        "max": 172
+      },
+      "estimatedCalories": 754,
+      "trackedDurationInSeconds": 2653
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 946,
+            "label": "15:46"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 732,
+            "label": "12:12"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 587,
+            "label": "9:47"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 282,
+            "label": "4:42"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 106,
+            "label": "1:46"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-04-10_1800:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "tokyodisco",
+      "displayName": "TOKYO DISCO",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Apr 10, 2026 | 6:00pm",
+      "date": "2026-04-10",
+      "time": "18:00:00",
+      "timestamp": 1775869200,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 49.2,
+      "heartrate": {
+        "average": 141,
+        "max": 165
+      },
+      "estimatedCalories": 752,
+      "trackedDurationInSeconds": 2504
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 825,
+            "label": "13:45"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 532,
+            "label": "8:52"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 617,
+            "label": "10:17"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 209,
+            "label": "3:29"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 321,
+            "label": "5:21"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-04-13_1715:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "hammer",
+      "displayName": "HAMMER",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Apr 13, 2026 | 5:15pm",
+      "date": "2026-04-13",
+      "time": "17:15:00",
+      "timestamp": 1776125700,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 46.7,
+      "heartrate": {
+        "average": 123,
+        "max": 153
+      },
+      "estimatedCalories": 695,
+      "trackedDurationInSeconds": 2573
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 1061,
+            "label": "17:41"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 473,
+            "label": "7:53"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 401,
+            "label": "6:41"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 400,
+            "label": "6:40"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 238,
+            "label": "3:58"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-04-15_1730:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "liberty",
+      "displayName": "LIBERTY",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Apr 15, 2026 | 5:30pm",
+      "date": "2026-04-15",
+      "time": "17:30:00",
+      "timestamp": 1776299400,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 53.1,
+      "heartrate": {
+        "average": 147,
+        "max": 172
+      },
+      "estimatedCalories": 511,
+      "trackedDurationInSeconds": 2457
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 673,
+            "label": "11:13"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 653,
+            "label": "10:53"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 582,
+            "label": "9:42"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 270,
+            "label": "4:30"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 279,
+            "label": "4:39"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-04-17_1230:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "allstar",
+      "displayName": "ALL STAR",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Apr 17, 2026 | 12:30pm",
+      "date": "2026-04-17",
+      "time": "12:30:00",
+      "timestamp": 1776454200,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 41.4,
+      "heartrate": {
+        "average": 116,
+        "max": 145
+      },
+      "estimatedCalories": 576,
+      "trackedDurationInSeconds": 2529
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 765,
+            "label": "12:45"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 709,
+            "label": "11:49"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 422,
+            "label": "7:02"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 318,
+            "label": "5:18"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 315,
+            "label": "5:15"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-04-20_1730:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "pinnacle",
+      "displayName": "PINNACLE",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Apr 20, 2026 | 5:30pm",
+      "date": "2026-04-20",
+      "time": "17:30:00",
+      "timestamp": 1776731400,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 45.6,
+      "heartrate": {
+        "average": 133,
+        "max": 159
+      },
+      "estimatedCalories": 668,
+      "trackedDurationInSeconds": 2595
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 899,
+            "label": "14:59"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 535,
+            "label": "8:55"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 590,
+            "label": "9:50"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 532,
+            "label": "8:52"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 39,
+            "label": "0:39"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-04-22_1700:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "panthers",
+      "displayName": "PANTHERS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Apr 22, 2026 | 5:00pm",
+      "date": "2026-04-22",
+      "time": "17:00:00",
+      "timestamp": 1776902400,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 55.6,
+      "heartrate": {
+        "average": 134,
+        "max": 156
+      },
+      "estimatedCalories": 629,
+      "trackedDurationInSeconds": 2486
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 682,
+            "label": "11:22"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 618,
+            "label": "10:18"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 543,
+            "label": "9:03"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 465,
+            "label": "7:45"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 178,
+            "label": "2:58"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-04-24_0630:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "tokyodisco",
+      "displayName": "TOKYO DISCO",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Apr 24, 2026 | 6:30am",
+      "date": "2026-04-24",
+      "time": "06:30:00",
+      "timestamp": 1777037400,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 52.7,
+      "heartrate": {
+        "average": 133,
+        "max": 161
+      },
+      "estimatedCalories": 637,
+      "trackedDurationInSeconds": 2461
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 777,
+            "label": "12:57"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 651,
+            "label": "10:51"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 415,
+            "label": "6:55"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 427,
+            "label": "7:07"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 191,
+            "label": "3:11"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-04-27_1715:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "pinnacle",
+      "displayName": "PINNACLE",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Apr 27, 2026 | 5:15pm",
+      "date": "2026-04-27",
+      "time": "17:15:00",
+      "timestamp": 1777335300,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 42.0,
+      "heartrate": {
+        "average": 141,
+        "max": 161
+      },
+      "estimatedCalories": 455,
+      "trackedDurationInSeconds": 2533
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 655,
+            "label": "10:55"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 560,
+            "label": "9:20"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 646,
+            "label": "10:46"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 356,
+            "label": "5:56"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 316,
+            "label": "5:16"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-04-29_0630:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "doubledown",
+      "displayName": "DOUBLE DOWN",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Apr 29, 2026 | 6:30am",
+      "date": "2026-04-29",
+      "time": "06:30:00",
+      "timestamp": 1777469400,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 37.2,
+      "heartrate": {
+        "average": 113,
+        "max": 142
+      },
+      "estimatedCalories": 706,
+      "trackedDurationInSeconds": 2521
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 798,
+            "label": "13:18"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 528,
+            "label": "8:48"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 875,
+            "label": "14:35"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 264,
+            "label": "4:24"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 56,
+            "label": "0:56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-05-01_1815:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "maximus",
+      "displayName": "MAXIMUS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, May 1, 2026 | 6:15pm",
+      "date": "2026-05-01",
+      "time": "18:15:00",
+      "timestamp": 1777684500,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 51.4,
+      "heartrate": {
+        "average": 127,
+        "max": 147
+      },
+      "estimatedCalories": 672,
+      "trackedDurationInSeconds": 2589
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 774,
+            "label": "12:54"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 515,
+            "label": "8:35"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 476,
+            "label": "7:56"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 438,
+            "label": "7:18"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 386,
+            "label": "6:26"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-05-04_1200:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "titans",
+      "displayName": "TITANS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, May 4, 2026 | 12:00pm",
+      "date": "2026-05-04",
+      "time": "12:00:00",
+      "timestamp": 1777921200,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 49.2,
+      "heartrate": {
+        "average": 149,
+        "max": 167
+      },
+      "estimatedCalories": 589,
+      "trackedDurationInSeconds": 2508
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 723,
+            "label": "12:03"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 712,
+            "label": "11:52"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 353,
+            "label": "5:53"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 462,
+            "label": "7:42"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 258,
+            "label": "4:18"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-05-08_1800:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "hammer",
+      "displayName": "HAMMER",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, May 8, 2026 | 6:00pm",
+      "date": "2026-05-08",
+      "time": "18:00:00",
+      "timestamp": 1778288400,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 51.2,
+      "heartrate": {
+        "average": 134,
+        "max": 160
+      },
+      "estimatedCalories": 649,
+      "trackedDurationInSeconds": 2665
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 811,
+            "label": "13:31"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 565,
+            "label": "9:25"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 680,
+            "label": "11:20"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 534,
+            "label": "8:54"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 75,
+            "label": "1:15"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-05-11_0930:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "apollo",
+      "displayName": "APOLLO",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, May 11, 2026 | 9:30am",
+      "date": "2026-05-11",
+      "time": "09:30:00",
+      "timestamp": 1778517000,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 58.2,
+      "heartrate": {
+        "average": 123,
+        "max": 152
+      },
+      "estimatedCalories": 697,
+      "trackedDurationInSeconds": 2562
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 722,
+            "label": "12:02"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 695,
+            "label": "11:35"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 539,
+            "label": "8:59"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 323,
+            "label": "5:23"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 283,
+            "label": "4:43"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-05-13_0900:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "liberty",
+      "displayName": "LIBERTY",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, May 13, 2026 | 9:00am",
+      "date": "2026-05-13",
+      "time": "09:00:00",
+      "timestamp": 1778688000,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 41.6,
+      "heartrate": {
+        "average": 129,
+        "max": 161
+      },
+      "estimatedCalories": 660,
+      "trackedDurationInSeconds": 2463
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 803,
+            "label": "13:23"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 682,
+            "label": "11:22"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 448,
+            "label": "7:28"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 381,
+            "label": "6:21"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 149,
+            "label": "2:29"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-05-15_1220:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "reddiamond",
+      "displayName": "RED DIAMOND",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, May 15, 2026 | 12:20pm",
+      "date": "2026-05-15",
+      "time": "12:20:00",
+      "timestamp": 1778872800,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 52.1,
+      "heartrate": {
+        "average": 129,
+        "max": 161
+      },
+      "estimatedCalories": 735,
+      "trackedDurationInSeconds": 2559
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 899,
+            "label": "14:59"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 695,
+            "label": "11:35"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 444,
+            "label": "7:24"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 321,
+            "label": "5:21"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 200,
+            "label": "3:20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-05-18_1730:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "allstar",
+      "displayName": "ALL STAR",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, May 18, 2026 | 5:30pm",
+      "date": "2026-05-18",
+      "time": "17:30:00",
+      "timestamp": 1779150600,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 38.1,
+      "heartrate": {
+        "average": 140,
+        "max": 170
+      },
+      "estimatedCalories": 438,
+      "trackedDurationInSeconds": 2587
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 792,
+            "label": "13:12"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 543,
+            "label": "9:03"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 633,
+            "label": "10:33"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 367,
+            "label": "6:07"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 252,
+            "label": "4:12"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-05-20_1230:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "liberty",
+      "displayName": "LIBERTY",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, May 20, 2026 | 12:30pm",
+      "date": "2026-05-20",
+      "time": "12:30:00",
+      "timestamp": 1779305400,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 41.3,
+      "heartrate": {
+        "average": 129,
+        "max": 151
+      },
+      "estimatedCalories": 558,
+      "trackedDurationInSeconds": 2602
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 665,
+            "label": "11:05"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 708,
+            "label": "11:48"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 677,
+            "label": "11:17"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 451,
+            "label": "7:31"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 101,
+            "label": "1:41"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-05-22_1820:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "doubledown",
+      "displayName": "DOUBLE DOWN",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, May 22, 2026 | 6:20pm",
+      "date": "2026-05-22",
+      "time": "18:20:00",
+      "timestamp": 1779499200,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 42.8,
+      "heartrate": {
+        "average": 118,
+        "max": 149
+      },
+      "estimatedCalories": 529,
+      "trackedDurationInSeconds": 2516
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 693,
+            "label": "11:33"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 448,
+            "label": "7:28"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 602,
+            "label": "10:02"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 341,
+            "label": "5:41"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 432,
+            "label": "7:12"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-05-25_1700:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "zeus",
+      "displayName": "ZEUS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, May 25, 2026 | 5:00pm",
+      "date": "2026-05-25",
+      "time": "17:00:00",
+      "timestamp": 1779753600,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 46.8,
+      "heartrate": {
+        "average": 112,
+        "max": 139
+      },
+      "estimatedCalories": 575,
+      "trackedDurationInSeconds": 2475
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 675,
+            "label": "11:15"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 803,
+            "label": "13:23"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 410,
+            "label": "6:50"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 514,
+            "label": "8:34"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 73,
+            "label": "1:13"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-05-29_0915:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "pegasus",
+      "displayName": "PEGASUS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, May 29, 2026 | 9:15am",
+      "date": "2026-05-29",
+      "time": "09:15:00",
+      "timestamp": 1780071300,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 58.9,
+      "heartrate": {
+        "average": 148,
+        "max": 170
+      },
+      "estimatedCalories": 473,
+      "trackedDurationInSeconds": 2640
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 794,
+            "label": "13:14"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 567,
+            "label": "9:27"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 546,
+            "label": "9:06"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 427,
+            "label": "7:07"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 306,
+            "label": "5:06"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-06-01_1230:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "apollo",
+      "displayName": "APOLLO",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Jun 1, 2026 | 12:30pm",
+      "date": "2026-06-01",
+      "time": "12:30:00",
+      "timestamp": 1780342200,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 37.4,
+      "heartrate": {
+        "average": 131,
+        "max": 158
+      },
+      "estimatedCalories": 747,
+      "trackedDurationInSeconds": 2650
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 1097,
+            "label": "18:17"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 524,
+            "label": "8:44"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 441,
+            "label": "7:21"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 490,
+            "label": "8:10"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 98,
+            "label": "1:38"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-06-03_0900:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "pinnacle",
+      "displayName": "PINNACLE",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Jun 3, 2026 | 9:00am",
+      "date": "2026-06-03",
+      "time": "09:00:00",
+      "timestamp": 1780502400,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 46.8,
+      "heartrate": {
+        "average": 138,
+        "max": 163
+      },
+      "estimatedCalories": 734,
+      "trackedDurationInSeconds": 2684
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 660,
+            "label": "11:00"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 734,
+            "label": "12:14"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 618,
+            "label": "10:18"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 383,
+            "label": "6:23"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 289,
+            "label": "4:49"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-06-05_1700:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "fiftyfifty",
+      "displayName": "FIFTY FIFTY",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Jun 5, 2026 | 5:00pm",
+      "date": "2026-06-05",
+      "time": "17:00:00",
+      "timestamp": 1780704000,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 56.9,
+      "heartrate": {
+        "average": 146,
+        "max": 167
+      },
+      "estimatedCalories": 506,
+      "trackedDurationInSeconds": 2628
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 668,
+            "label": "11:08"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 558,
+            "label": "9:18"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 533,
+            "label": "8:53"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 584,
+            "label": "9:44"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 285,
+            "label": "4:45"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-06-08_1720:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "hammer",
+      "displayName": "HAMMER",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Jun 8, 2026 | 5:20pm",
+      "date": "2026-06-08",
+      "time": "17:20:00",
+      "timestamp": 1780964400,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 47.5,
+      "heartrate": {
+        "average": 156,
+        "max": 180
+      },
+      "estimatedCalories": 569,
+      "trackedDurationInSeconds": 2448
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 650,
+            "label": "10:50"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 576,
+            "label": "9:36"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 585,
+            "label": "9:45"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 419,
+            "label": "6:59"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 218,
+            "label": "3:38"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-06-12_1200:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "maximus",
+      "displayName": "MAXIMUS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Jun 12, 2026 | 12:00pm",
+      "date": "2026-06-12",
+      "time": "12:00:00",
+      "timestamp": 1781290800,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 51.0,
+      "heartrate": {
+        "average": 123,
+        "max": 148
+      },
+      "estimatedCalories": 695,
+      "trackedDurationInSeconds": 2558
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 684,
+            "label": "11:24"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 731,
+            "label": "12:11"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 638,
+            "label": "10:38"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 431,
+            "label": "7:11"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 74,
+            "label": "1:14"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-06-15_1200:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "liberty",
+      "displayName": "LIBERTY",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Jun 15, 2026 | 12:00pm",
+      "date": "2026-06-15",
+      "time": "12:00:00",
+      "timestamp": 1781550000,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 52.0,
+      "heartrate": {
+        "average": 122,
+        "max": 145
+      },
+      "estimatedCalories": 640,
+      "trackedDurationInSeconds": 2553
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 946,
+            "label": "15:46"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 626,
+            "label": "10:26"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 680,
+            "label": "11:20"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 229,
+            "label": "3:49"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 72,
+            "label": "1:12"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-06-17_1700:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "hammer",
+      "displayName": "HAMMER",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Jun 17, 2026 | 5:00pm",
+      "date": "2026-06-17",
+      "time": "17:00:00",
+      "timestamp": 1781740800,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 46.6,
+      "heartrate": {
+        "average": 154,
+        "max": 185
+      },
+      "estimatedCalories": 707,
+      "trackedDurationInSeconds": 2673
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 651,
+            "label": "10:51"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 584,
+            "label": "9:44"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 653,
+            "label": "10:53"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 462,
+            "label": "7:42"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 323,
+            "label": "5:23"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-06-19_1230:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "zeus",
+      "displayName": "ZEUS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Jun 19, 2026 | 12:30pm",
+      "date": "2026-06-19",
+      "time": "12:30:00",
+      "timestamp": 1781897400,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 36.7,
+      "heartrate": {
+        "average": 156,
+        "max": 181
+      },
+      "estimatedCalories": 492,
+      "trackedDurationInSeconds": 2578
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 1033,
+            "label": "17:13"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 617,
+            "label": "10:17"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 383,
+            "label": "6:23"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 411,
+            "label": "6:51"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 134,
+            "label": "2:14"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-06-22_1700:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "hammer",
+      "displayName": "HAMMER",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Jun 22, 2026 | 5:00pm",
+      "date": "2026-06-22",
+      "time": "17:00:00",
+      "timestamp": 1782172800,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 47.5,
+      "heartrate": {
+        "average": 153,
+        "max": 184
+      },
+      "estimatedCalories": 508,
+      "trackedDurationInSeconds": 2551
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 756,
+            "label": "12:36"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 495,
+            "label": "8:15"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 627,
+            "label": "10:27"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 556,
+            "label": "9:16"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 117,
+            "label": "1:57"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-06-24_0915:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "panthers",
+      "displayName": "PANTHERS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Wed, Jun 24, 2026 | 9:15am",
+      "date": "2026-06-24",
+      "time": "09:15:00",
+      "timestamp": 1782317700,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 43.8,
+      "heartrate": {
+        "average": 116,
+        "max": 138
+      },
+      "estimatedCalories": 642,
+      "trackedDurationInSeconds": 2441
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 664,
+            "label": "11:04"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 394,
+            "label": "6:34"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 613,
+            "label": "10:13"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 526,
+            "label": "8:46"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 244,
+            "label": "4:04"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-06-26_1730:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "zeus",
+      "displayName": "ZEUS",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Fri, Jun 26, 2026 | 5:30pm",
+      "date": "2026-06-26",
+      "time": "17:30:00",
+      "timestamp": 1782520200,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 53.5,
+      "heartrate": {
+        "average": 134,
+        "max": 157
+      },
+      "estimatedCalories": 712,
+      "trackedDurationInSeconds": 2507
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 791,
+            "label": "13:11"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 561,
+            "label": "9:21"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 417,
+            "label": "6:57"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 488,
+            "label": "8:08"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 250,
+            "label": "4:10"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sessionId": "2026-06-29_0620:studio:demo:serial:100000",
+    "version": {
+      "tag": "v2.0.0",
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "studio": {
+      "studioId": 9999,
+      "name": "F45 Example Studio",
+      "code": "demo",
+      "timezone": "America/Los_Angeles",
+      "isLoaner": false
+    },
+    "workout": {
+      "name": "medusa",
+      "displayName": "MEDUSA",
+      "type": {
+        "id": 2,
+        "name": "resistance"
+      }
+    },
+    "classInfo": {
+      "localizedDateTime": "Mon, Jun 29, 2026 | 6:20am",
+      "date": "2026-06-29",
+      "time": "06:20:00",
+      "timestamp": 1782739200,
+      "timezone": "America/Los_Angeles",
+      "durationInMinutes": 45
+    },
+    "summary": {
+      "points": 44.9,
+      "heartrate": {
+        "average": 142,
+        "max": 171
+      },
+      "estimatedCalories": 625,
+      "trackedDurationInSeconds": 2623
+    },
+    "heartrate": {
+      "calculationMethod": {
+        "id": 2,
+        "name": "karvonen"
+      },
+      "inputs": {
+        "maxHR": {
+          "default": 190,
+          "override": 185,
+          "value": 185
+        },
+        "restingHR": {
+          "default": 75,
+          "override": 70,
+          "value": 70
+        }
+      },
+      "zones": [
+        {
+          "zoneId": 1,
+          "name": "Very light / Recovery",
+          "computedDuration": {
+            "seconds": 824,
+            "label": "13:44"
+          }
+        },
+        {
+          "zoneId": 2,
+          "name": "Light / Easy",
+          "computedDuration": {
+            "seconds": 431,
+            "label": "7:11"
+          }
+        },
+        {
+          "zoneId": 3,
+          "name": "Moderate",
+          "computedDuration": {
+            "seconds": 552,
+            "label": "9:12"
+          }
+        },
+        {
+          "zoneId": 4,
+          "name": "High",
+          "computedDuration": {
+            "seconds": 450,
+            "label": "7:30"
+          }
+        },
+        {
+          "zoneId": 5,
+          "name": "Maximum",
+          "computedDuration": {
+            "seconds": 366,
+            "label": "6:06"
+          }
+        }
+      ]
+    }
+  }
+]
