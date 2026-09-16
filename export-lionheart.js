@@ -10,11 +10,18 @@
  *   node export-lionheart.js 12429103 my-lionheart-data.json
  *
  * Finding your user_id:
- *   There is no public way to look this up - F45's Lionheart API is
- *   undocumented. The only known way is to intercept your own phone's
- *   network traffic (e.g. with mitmproxy or HTTP Toolkit) while opening
- *   a class result in the F45 app, and read `user_id` out of the request
- *   URL to api.lionheart.f45.com. See:
+ *   There is no public way to look this up, but it shows up in your phone's
+ *   own logs when you open the F45 app.
+ *     Android: connect via USB with adb installed, run
+ *       `adb logcat | grep externalId`, then open the F45 app - look for a
+ *       line like `login(externalId: 12429103, jwtBearerToken: null)`.
+ *       That number is your user_id.
+ *     iPhone: same idea via Xcode's Window > Devices and Simulators, viewing
+ *       your device's console log while opening the app and searching for
+ *       `externalId`.
+ *   Alternatively, intercept your phone's network traffic (e.g. with
+ *   mitmproxy or HTTP Toolkit) while opening a class result in the F45 app,
+ *   and read `user_id` out of the request URL to api.lionheart.f45.com. See:
  *   https://jamesiv.es/blog/f45-broke-my-beloved-strava-integration/
  */
 

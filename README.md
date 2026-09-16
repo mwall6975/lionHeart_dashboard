@@ -39,9 +39,29 @@ repo (Settings → Pages → Source: `main` branch, `/` root) to get a public UR
 
 ## Getting your own data
 
-F45's Lionheart API is undocumented, so exporting your own history requires
-finding your personal `user_id` by intercepting your phone's network traffic
-(e.g. with [mitmproxy](https://mitmproxy.org) or
-[HTTP Toolkit](https://httptoolkit.com)) while opening a class result in the
-F45 app. Full steps are in the app itself, under "How do I get my export
-file?".
+F45's Lionheart API is undocumented, so either option below starts the same
+way: finding your personal `user_id`. There's no public way to look it up,
+but it shows up in your phone's own logs when you open the F45 app:
+
+- **Android** — connect via USB with [adb](https://developer.android.com/tools/adb)
+  installed, run `adb logcat | grep externalId`, then open the F45 app and
+  look for a line like `login(externalId: 12429103, jwtBearerToken: null)`.
+  That number is your `user_id`.
+- **iPhone** — same idea via Xcode's Window → Devices and Simulators, viewing
+  your device's console log while opening the app and searching for
+  `externalId`.
+- **Alternatively**, intercept your phone's network traffic (e.g. with
+  [mitmproxy](https://mitmproxy.org) or [HTTP Toolkit](https://httptoolkit.com))
+  while opening a class result, and read `user_id` out of the request URL to
+  `api.lionheart.f45.com`.
+
+From there, pick one:
+
+- **Export and upload** — run `export-lionheart.js` locally and upload the
+  resulting file into the app. Full steps are in the app itself, under "How
+  do I get my export file?". No setup beyond Node.js.
+- **Fetch directly** — deploy the Cloudflare Worker in `cloudflare-worker/`
+  once (a few minutes, free tier), then use the "Or: fetch directly from your
+  F45 account" section in the app: paste the Worker URL and your `user_id`
+  and it loads your history straight in, no download/upload step. See
+  [cloudflare-worker/README.md](cloudflare-worker/README.md) for setup.
