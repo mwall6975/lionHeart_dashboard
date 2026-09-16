@@ -234,6 +234,22 @@
   }
   .copy-btn:hover{ background:rgba(255,255,255,0.2); }
 
+  .worker-form{ display:flex; align-items:flex-end; gap:14px; flex-wrap:wrap; margin-top:12px; }
+  .worker-form input[type=text]{
+    font-family:"Public Sans", sans-serif;
+    font-size:13px;
+    color:var(--ink-1);
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:7px;
+    padding:7px 10px;
+    min-width:220px;
+  }
+  .worker-form input[type=text]:focus-visible{ outline:2px solid var(--avg-hr); outline-offset:1px; }
+  #workerUserIdInput{ min-width:140px; }
+  .worker-status{ font-size:12.5px; color:var(--ink-muted); margin:8px 0 0; min-height:1em; }
+  .worker-status.error{ color:var(--max-hr); }
+
   /* --- tabs --- */
   .tabs{
     display:flex;
@@ -427,6 +443,26 @@
         <li>Upload the resulting <code>lionheart-export.json</code> above.</li>
       </ol>
       <div class="code-block" id="scriptBlock"><button class="copy-btn" id="copyScriptBtn">Copy</button></div>
+    </div>
+  </details>
+
+  <details class="howto">
+    <summary>Or: fetch directly from your F45 account (no download step)</summary>
+    <div class="howto-body">
+      <p>F45's Lionheart API doesn't allow browsers to call it directly, so this needs a small one-time setup: deploy a free <a href="https://workers.cloudflare.com" target="_blank" rel="noopener">Cloudflare Worker</a> that proxies the request on your behalf. The worker code and step-by-step setup are in the repo under <a href="https://github.com/mwall6975/lionHeart_dashboard/tree/main/cloudflare-worker" target="_blank" rel="noopener">cloudflare-worker/</a> &mdash; it takes a few minutes and stays on Cloudflare's free tier.</p>
+      <p>Once it's deployed, paste its URL below along with your <b>user_id</b> (see the manual-export steps above for how to find it) and fetch your history directly &mdash; no file to download or upload.</p>
+      <div class="worker-form">
+        <div class="filter-field">
+          <label for="workerUrlInput">Worker URL</label>
+          <input type="text" id="workerUrlInput" placeholder="https://lionheart-proxy.your-subdomain.workers.dev">
+        </div>
+        <div class="filter-field">
+          <label for="workerUserIdInput">User ID</label>
+          <input type="text" id="workerUserIdInput" placeholder="12345678" inputmode="numeric">
+        </div>
+        <button class="filter-reset" id="workerFetchBtn" type="button">Fetch my data</button>
+      </div>
+      <p class="worker-status" id="workerFetchStatus"></p>
     </div>
   </details>
 
@@ -748,6 +784,44 @@ fileInput.addEventListener('change', (e) => handleFile(e.target.files[0]));
 ['dragenter','dragover'].forEach(evt => dropzone.addEventListener(evt, (e) => { e.preventDefault(); dropzone.classList.add('drag'); }));
 ['dragleave','drop'].forEach(evt => dropzone.addEventListener(evt, (e) => { e.preventDefault(); dropzone.classList.remove('drag'); }));
 dropzone.addEventListener('drop', (e) => { handleFile(e.dataTransfer.files[0]); });
+
+// ---------- worker fetch wiring ----------
+const WORKER_URL_KEY = 'lionheartWorkerUrl';
+const workerUrlInput = document.getElementById('workerUrlInput');
+const workerUserIdInput = document.getElementById('workerUserIdInput');
+const workerFetchBtn = document.getElementById('workerFetchBtn');
+const workerFetchStatus = document.getElementById('workerFetchStatus');
+
+try { workerUrlInput.value = localStorage.getItem(WORKER_URL_KEY) || ''; } catch {}
+
+async function fetchFromWorker(){
+  const workerUrl = workerUrlInput.value.trim();
+  const userId = workerUserIdInput.value.trim();
+  workerFetchStatus.className = 'worker-status';
+  if (!workerUrl) { workerFetchStatus.className = 'worker-status error'; workerFetchStatus.textContent = 'Enter your deployed Worker URL first.'; return; }
+  if (!userId) { workerFetchStatus.className = 'worker-status error'; workerFetchStatus.textContent = 'Enter your Lionheart user_id.'; return; }
+
+  try { localStorage.setItem(WORKER_URL_KEY, workerUrl); } catch {}
+
+  workerFetchBtn.disabled = true;
+  workerFetchStatus.textContent = 'Fetching your session history…';
+  try {
+    const sep = workerUrl.includes('?') ? '&' : '?';
+    const res = await fetch(`${workerUrl}${sep}user_id=${encodeURIComponent(userId)}`);
+    const body = await res.json().catch(() => null);
+    if (!res.ok) throw new Error((body && body.error) || `Request failed (${res.status})`);
+    if (!Array.isArray(body) || body.length === 0) throw new Error('No sessions returned for that user_id.');
+    loadData(body, 'live');
+    workerFetchStatus.textContent = '';
+  } catch (err) {
+    workerFetchStatus.className = 'worker-status error';
+    workerFetchStatus.textContent = 'Could not fetch: ' + err.message;
+  } finally {
+    workerFetchBtn.disabled = false;
+  }
+}
+
+workerFetchBtn.addEventListener('click', fetchFromWorker);
 
 // ---------- tabs ----------
 const tabTrends = document.getElementById('tabTrends');

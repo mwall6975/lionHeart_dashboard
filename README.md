@@ -26,6 +26,11 @@ in your browser — nothing is uploaded to a server.
   ```
   node export-lionheart.js YOUR_USER_ID
   ```
+- `cloudflare-worker/` — an optional Cloudflare Worker that proxies the
+  Lionheart API so the dashboard can fetch your session history directly in
+  the browser, no download/upload step needed. See its
+  [README](cloudflare-worker/README.md) to deploy one (free tier, a few
+  minutes) — it's a one-time setup per person who wants this shortcut.
 
 ## Running it
 
