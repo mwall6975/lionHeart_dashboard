@@ -245,6 +245,62 @@
     margin-bottom:24px;
     width:fit-content;
   }
+
+  .filter-row{
+    display:flex;
+    align-items:flex-end;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+    padding:14px 16px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:10px;
+  }
+  .filter-field{ display:flex; flex-direction:column; gap:4px; }
+  .filter-field label{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    color:var(--ink-muted);
+  }
+  .filter-field select, .filter-field input[type=date]{
+    font-family:"Public Sans", sans-serif;
+    font-size:13px;
+    color:var(--ink-1);
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:7px;
+    padding:7px 10px;
+    min-width:150px;
+  }
+  .filter-field input[type=date]{ min-width:135px; }
+  .filter-field select:focus-visible, .filter-field input:focus-visible{ outline:2px solid var(--avg-hr); outline-offset:1px; }
+  .filter-reset{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.03em;
+    color:var(--ink-2);
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:7px;
+    padding:8px 14px;
+    cursor:pointer;
+    align-self:flex-end;
+  }
+  .filter-reset:hover{ color:var(--ink-1); }
+  .filter-reset:focus-visible{ outline:2px solid var(--avg-hr); outline-offset:2px; }
+  .filter-count{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12px;
+    color:var(--ink-muted);
+    align-self:flex-end;
+    padding-bottom:8px;
+    margin-left:auto;
+  }
   .tab{
     font-family:"Public Sans", sans-serif;
     font-size:13.5px;
@@ -381,7 +437,25 @@
 
   <!-- ===== TRENDS VIEW ===== -->
   <div class="view active" id="viewTrends">
+    <div class="filter-row">
+      <div class="filter-field">
+        <label for="workoutFilter">Workout</label>
+        <select id="workoutFilter"><option value="all">All Workouts</option></select>
+      </div>
+      <div class="filter-field">
+        <label for="dateFromFilter">From</label>
+        <input type="date" id="dateFromFilter">
+      </div>
+      <div class="filter-field">
+        <label for="dateToFilter">To</label>
+        <input type="date" id="dateToFilter">
+      </div>
+      <button class="filter-reset" id="filterReset" type="button">Reset</button>
+      <span class="filter-count" id="filterCount"></span>
+    </div>
+
     <div class="stats" id="trendsStats"></div>
+    <p class="empty-note" id="trendsEmptyNote" hidden>No sessions match this filter. Try widening the date range or choosing a different workout.</p>
 
     <div class="card">
       <div class="card-head">
@@ -471,6 +545,7 @@ const EXPORT_SCRIPT = "#!/usr/bin/env node\n/**\n * Exports your full F45 Lionhe
 let RAW = EXAMPLE_RAW;
 let TREND_DATA = [];
 let WORKOUT_DATA = [];
+let trendFilters = { workout:'all', from:null, to:null };
 
 const titleCase = (s) => s.replace(/\w\S*/g, t => t.charAt(0) + t.slice(1).toLowerCase());
 function round1(n){ return Math.round(n*10)/10; }
@@ -539,11 +614,54 @@ function loadData(raw, sourceLabel){
     RAW = raw;
     setStatus(sourceLabel === 'example' ? 'example' : 'loaded',
       sourceLabel === 'example' ? 'Showing example data' : `Loaded ${trend.length} sessions`);
+    resetTrendFilters();
     renderAll();
   } catch (err) {
     setStatus('error', 'Could not read that file: ' + err.message);
   }
 }
+
+// ---------- trends filters (workout + date range) ----------
+function resetTrendFilters(){
+  trendFilters = { workout:'all', from: TREND_DATA[0].date, to: TREND_DATA[TREND_DATA.length-1].date };
+
+  const workoutNames = Array.from(new Set(TREND_DATA.map(d => d.workout))).sort();
+  const sel = document.getElementById('workoutFilter');
+  sel.innerHTML = '<option value="all">All Workouts</option>' +
+    workoutNames.map(w => `<option value="${w}">${titleCase(w)}</option>`).join('');
+  sel.value = 'all';
+
+  const fromInput = document.getElementById('dateFromFilter');
+  const toInput = document.getElementById('dateToFilter');
+  fromInput.min = toInput.min = TREND_DATA[0].date;
+  fromInput.max = toInput.max = TREND_DATA[TREND_DATA.length-1].date;
+  fromInput.value = trendFilters.from;
+  toInput.value = trendFilters.to;
+}
+
+function getFilteredTrendData(){
+  return TREND_DATA.filter(d =>
+    (trendFilters.workout === 'all' || d.workout === trendFilters.workout) &&
+    (!trendFilters.from || d.date >= trendFilters.from) &&
+    (!trendFilters.to || d.date <= trendFilters.to)
+  );
+}
+
+function onTrendFilterChange(){
+  const from = document.getElementById('dateFromFilter').value;
+  const to = document.getElementById('dateToFilter').value;
+  trendFilters.workout = document.getElementById('workoutFilter').value;
+  trendFilters.from = from || null;
+  trendFilters.to = to || null;
+  renderTrendsStats();
+  renderTrendsTable();
+  initTrendsCharts();
+}
+
+document.getElementById('workoutFilter').addEventListener('change', onTrendFilterChange);
+document.getElementById('dateFromFilter').addEventListener('change', onTrendFilterChange);
+document.getElementById('dateToFilter').addEventListener('change', onTrendFilterChange);
+document.getElementById('filterReset').addEventListener('click', () => { resetTrendFilters(); onTrendFilterChange(); });
 
 function setStatus(kind, text){
   const pill = document.getElementById('statusPill');
@@ -629,25 +747,45 @@ document.getElementById('workoutTableToggle').addEventListener('click', (e) => {
 // Rendering (Trends view)
 // ==================================================================
 function renderTrendsStats(){
-  const n = TREND_DATA.length;
-  const avgHr = round1(TREND_DATA.reduce((a,d)=>a+d.avgHr,0)/n);
-  const totalCal = TREND_DATA.reduce((a,d)=>a+d.calories,0);
-  const avgScore = round1(TREND_DATA.reduce((a,d)=>a+d.points,0)/n);
-  document.getElementById('trendsStats').innerHTML = `
+  const data = getFilteredTrendData();
+  const n = data.length;
+  const total = TREND_DATA.length;
+  const countEl = document.getElementById('filterCount');
+  countEl.textContent = (trendFilters.workout === 'all' && n === total) ? `${n} sessions` : `${n} of ${total} sessions`;
+
+  const cards = document.querySelectorAll('#viewTrends .card');
+  const emptyNote = document.getElementById('trendsEmptyNote');
+  const statsEl = document.getElementById('trendsStats');
+
+  if (n === 0){
+    emptyNote.hidden = false;
+    statsEl.innerHTML = '';
+    cards.forEach(c => c.hidden = true);
+    document.getElementById('trendsFootNote').textContent = '';
+    return;
+  }
+  emptyNote.hidden = true;
+  cards.forEach(c => c.hidden = false);
+
+  const avgHr = round1(data.reduce((a,d)=>a+d.avgHr,0)/n);
+  const totalCal = data.reduce((a,d)=>a+d.calories,0);
+  const avgScore = round1(data.reduce((a,d)=>a+d.points,0)/n);
+  statsEl.innerHTML = `
     <div class="stat"><div class="stat-label">Sessions Tracked</div><div class="stat-value">${n}</div></div>
     <div class="stat"><div class="stat-label">Avg Heart Rate</div><div class="stat-value">${avgHr}<small>bpm</small></div></div>
     <div class="stat"><div class="stat-label">Total Calories</div><div class="stat-value">${totalCal.toLocaleString()}<small>kcal</small></div></div>
     <div class="stat"><div class="stat-label">Avg Score</div><div class="stat-value">${avgScore}<small>pts</small></div></div>
   `;
   document.getElementById('trendsFootNote').innerHTML =
-    `${n} tracked sessions, ${fmtDate(TREND_DATA[0].date)} &ndash; ${fmtDate(TREND_DATA[n-1].date)}, ${TREND_DATA[n-1].date.slice(0,4)}. Gaps in the line mark days without a Lionheart reading.`;
+    `${n} tracked sessions, ${fmtDate(data[0].date)} &ndash; ${fmtDate(data[n-1].date)}, ${data[n-1].date.slice(0,4)}. Gaps in the line mark days without a Lionheart reading.`;
 }
 function renderZoneLegend(){
   document.getElementById('zoneLegend').innerHTML =
     ZONE_META.map(z => `<span class="legend-item"><span class="swatch" style="background:${getVar(z.cssVar)}"></span>${z.label}</span>`).join('');
 }
 function renderTrendsTable(){
-  document.getElementById('trendsTableBody').innerHTML = TREND_DATA.map(d => `
+  const data = getFilteredTrendData();
+  document.getElementById('trendsTableBody').innerHTML = data.map(d => `
     <tr>
       <td>${fmtDate(d.date)}</td><td class="workout">${titleCase(d.workout)}</td>
       <td>${d.avgHr}</td><td>${d.maxHr}</td><td>${d.calories}</td><td>${d.points}</td>
@@ -762,29 +900,30 @@ function buildStackedChart(holder, opts, DATA){
 }
 
 function initTrendsCharts(){
-  if (TREND_DATA.length === 0) return;
+  const data = getFilteredTrendData();
+  if (data.length === 0) return;
   const hrChart = buildLineChart(document.querySelector('[data-chart="hr"]'), {
     series: [{key:'avgHr',color:getVar('--avg-hr')},{key:'maxHr',color:getVar('--max-hr')}],
     height:220, ariaLabel:'Average and maximum heart rate per session over time',
-  }, TREND_DATA);
+  }, data);
   const calChart = buildLineChart(document.querySelector('[data-chart="calories"]'), {
     series:[{key:'calories',color:getVar('--calories'),area:true}], height:180, endLabel:true,
     ariaLabel:'Calories burned per session over time',
-  }, TREND_DATA);
+  }, data);
   const ptsChart = buildLineChart(document.querySelector('[data-chart="points"]'), {
     series:[{key:'points',color:getVar('--points'),area:true}], height:180, endLabel:true,
     yFormat:(v)=>Math.round(v), ariaLabel:'Lionheart class score per session over time',
-  }, TREND_DATA);
+  }, data);
   const zoneBands = ZONE_META.map(z => ({ key:z.key, color:getVar(z.cssVar), label:z.label }));
   const zoneChart = buildStackedChart(document.querySelector('[data-chart="zones"]'), {
     bands: zoneBands, height:200, ariaLabel:'Percent of session time spent in each heart-rate zone, over time',
-  }, TREND_DATA);
+  }, data);
 
   const tooltip = document.getElementById('tooltip');
   const charts = [hrChart, calChart, ptsChart, zoneChart];
   function findNearestIndex(xScale, mouseX){
     let best=0, bestDist=Infinity;
-    TREND_DATA.forEach((d,i) => { const x=xScale(toTime(d.date)); const dist=Math.abs(x-mouseX); if(dist<bestDist){bestDist=dist;best=i;} });
+    data.forEach((d,i) => { const x=xScale(toTime(d.date)); const dist=Math.abs(x-mouseX); if(dist<bestDist){bestDist=dist;best=i;} });
     return best;
   }
   charts.forEach(chart => {
@@ -793,7 +932,7 @@ function initTrendsCharts(){
       const scaleX=chart.svg.viewBox.baseVal.width/rect.width;
       const mouseX=(e.clientX-rect.left)*scaleX;
       const idx=findNearestIndex(chart.xScale, mouseX);
-      showAt(idx, TREND_DATA[idx], e);
+      showAt(idx, data[idx], e);
     });
     chart.hit.addEventListener('mouseleave', hideAll);
   });
