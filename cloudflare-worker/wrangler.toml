@@ -2,8 +2,7 @@ name = "lionheart-proxy"
 main = "worker.js"
 compatibility_date = "2026-09-16"
 
-# Restrict this to your dashboard's origin once you know it, e.g.
-# "https://mwall6975.github.io". Leaving it as "*" works but lets any site
-# use your deployed worker as a relay to the Lionheart API.
+# Restricted to the dashboard's GitHub Pages origin so other sites can't use
+# this worker as a relay to the Lionheart API.
 [vars]
-ALLOWED_ORIGIN = "*"
+ALLOWED_ORIGIN = "https://mwall6975.github.io"
