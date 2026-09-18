@@ -5,13 +5,17 @@
  * can't call it directly - this worker calls it server-side (no CORS issue
  * there) and re-serves the result with CORS headers of its own.
  *
- * Endpoint: GET /?user_id=<id>
+ * Endpoint: GET /?user_id=<id>, header X-Access-Token: <your token>
  *
  * Note on auth: the Lionheart API itself accepts any user_id with no token,
- * so this proxy is exactly as open as the API it forwards to. Set
- * ALLOWED_ORIGIN (in wrangler.toml or a Worker environment variable) to your
- * dashboard's origin to stop unrelated sites from using your deployed worker
- * as a relay; it does not add authentication that the upstream API lacks.
+ * so without ACCESS_TOKEN this proxy would be exactly as open as the API it
+ * forwards to - anyone who knows or guesses a user_id could pull that
+ * person's data through it. ACCESS_TOKEN closes that: set it with
+ * `wrangler secret put ACCESS_TOKEN` (never in wrangler.toml, which is
+ * committed to git) and every request must send it back in the
+ * X-Access-Token header. Share your deployed URL + token only with people
+ * you want fetching their own data through your worker - anyone you don't
+ * trust with that should deploy their own copy instead.
  */
 
 const MAX_PAGES = 50; // safety cap: 50 * 10/page = 500 sessions
@@ -22,7 +26,7 @@ export default {
     const corsHeaders = {
       'Access-Control-Allow-Origin': allowedOrigin,
       'Access-Control-Allow-Methods': 'GET, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
+      'Access-Control-Allow-Headers': 'Content-Type, X-Access-Token',
     };
 
     if (request.method === 'OPTIONS') {
@@ -30,6 +34,13 @@ export default {
     }
     if (request.method !== 'GET') {
       return json({ error: 'Method not allowed.' }, 405, corsHeaders);
+    }
+
+    if (!env.ACCESS_TOKEN) {
+      return json({ error: 'Worker has no ACCESS_TOKEN configured. Run: wrangler secret put ACCESS_TOKEN' }, 500, corsHeaders);
+    }
+    if (request.headers.get('X-Access-Token') !== env.ACCESS_TOKEN) {
+      return json({ error: 'Missing or invalid access token.' }, 401, corsHeaders);
     }
 
     const userId = new URL(request.url).searchParams.get('user_id');

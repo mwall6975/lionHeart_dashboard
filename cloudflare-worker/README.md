@@ -9,14 +9,15 @@ something to talk to.
 It takes your `user_id`, pages through `/v3/profile/sessions` the same way
 `export-lionheart.js` does, and returns the combined session array as JSON.
 
-**Auth note:** the Lionheart API accepts any `user_id` with no token, so this
-proxy is exactly as open as the API it forwards to — anyone with your
-worker's URL and *a* user_id (not necessarily yours) can pull that user's
-session history through it. Setting `ALLOWED_ORIGIN` (below) stops other
-websites from using your worker as a relay from a visitor's browser, but it
-does not add authentication the upstream API doesn't have. Treat the deployed
-URL as something you don't need to publicize, not as a secret that fully
-protects the data behind it.
+**Auth note:** the Lionheart API itself accepts any `user_id` with no token —
+without a token check of its own, this worker would be exactly as open,
+letting anyone who knows or guesses a `user_id` (not necessarily theirs) pull
+that person's data through it. That's why every request also needs an
+`ACCESS_TOKEN` you set yourself (below); the worker rejects anything without
+it. If you share your deployed URL, share the token only with people you
+want fetching their own data through your worker — everyone else should
+deploy their own copy instead (that's the point of this being a repo folder
+rather than one shared instance).
 
 ## Deploy it (a few minutes, free tier)
 
@@ -34,16 +35,30 @@ protects the data behind it.
    ```
 4. Wrangler prints your Worker's URL, e.g.
    `https://lionheart-proxy.YOUR-SUBDOMAIN.workers.dev`.
-5. (Recommended) Edit `wrangler.toml` and set `ALLOWED_ORIGIN` to your
+5. Set your access token — pick any random string (e.g.
+   `openssl rand -hex 16`), then:
+   ```bash
+   wrangler secret put ACCESS_TOKEN
+   ```
+   and paste it in when prompted. This is stored on Cloudflare, not in any
+   file, so it's safe from ending up in git.
+6. (Recommended) Edit `wrangler.toml` and set `ALLOWED_ORIGIN` to your
    dashboard's URL (e.g. `https://mwall6975.github.io`) instead of `"*"`,
    then run `wrangler deploy` again.
-6. Paste the Worker URL and your `user_id` into the dashboard's "fetch
-   directly from your F45 account" section.
+7. In the dashboard's "fetch directly from your F45 account" section, enter
+   your Worker URL, the same access token from step 5, and your `user_id`.
 
 ## Test it directly
 
 ```bash
-curl "https://lionheart-proxy.YOUR-SUBDOMAIN.workers.dev/?user_id=YOUR_USER_ID"
+curl -H "X-Access-Token: YOUR_TOKEN" \
+  "https://lionheart-proxy.YOUR-SUBDOMAIN.workers.dev/?user_id=YOUR_USER_ID"
 ```
 
-Should return a JSON array of your Lionheart sessions.
+Should return a JSON array of your Lionheart sessions. Omitting or getting
+the header wrong returns a 401.
+
+## Rotating or revoking the token
+
+Run `wrangler secret put ACCESS_TOKEN` again with a new value — the old one
+stops working immediately. Do this if you ever think the token leaked.

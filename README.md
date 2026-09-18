@@ -26,11 +26,11 @@ in your browser — nothing is uploaded to a server.
   ```
   node export-lionheart.js YOUR_USER_ID
   ```
-- `cloudflare-worker/` — an optional Cloudflare Worker that proxies the
-  Lionheart API so the dashboard can fetch your session history directly in
-  the browser, no download/upload step needed. See its
-  [README](cloudflare-worker/README.md) to deploy one (free tier, a few
-  minutes) — it's a one-time setup per person who wants this shortcut.
+- `cloudflare-worker/` — the Cloudflare Worker that `index.html` talks to for
+  the "fetch directly from your F45 account" option (it proxies the
+  Lionheart API so the browser can call it, and gates access with an
+  access token). See its [README](cloudflare-worker/README.md) if you want
+  to run your own instead of the one baked into `index.html`.
 
 ## Running it
 
@@ -60,8 +60,11 @@ From there, pick one:
 - **Export and upload** — run `export-lionheart.js` locally and upload the
   resulting file into the app. Full steps are in the app itself, under "How
   do I get my export file?". No setup beyond Node.js.
-- **Fetch directly** — deploy the Cloudflare Worker in `cloudflare-worker/`
-  once (a few minutes, free tier), then use the "Or: fetch directly from your
-  F45 account" section in the app: paste the Worker URL and your `user_id`
-  and it loads your history straight in, no download/upload step. See
-  [cloudflare-worker/README.md](cloudflare-worker/README.md) for setup.
+- **Fetch directly** — use the "Or: fetch directly from your F45 account"
+  section in the app: enter the access token you were given, plus your
+  `user_id`, and it loads your history straight in, no download/upload step.
+  (If you don't have a token, ask whoever shared this dashboard with you, or
+  deploy your own Worker — see
+  [cloudflare-worker/README.md](cloudflare-worker/README.md) — and update the
+  `WORKER_URL` constant near the top of `index.html`'s script to point at
+  it.)

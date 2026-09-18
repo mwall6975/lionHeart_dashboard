@@ -6,3 +6,9 @@ compatibility_date = "2026-09-16"
 # this worker as a relay to the Lionheart API.
 [vars]
 ALLOWED_ORIGIN = "https://mwall6975.github.io"
+
+# ACCESS_TOKEN is NOT set here - secrets don't belong in a file that's
+# committed to git. Set it once after deploying with:
+#   wrangler secret put ACCESS_TOKEN
+# and paste that same value into the dashboard's "Access Token" field along
+# with your Worker URL and user_id. See README.md.
