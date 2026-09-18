@@ -539,14 +539,14 @@
       <p class="note" id="trendsFootNote"></p>
       <div class="foot-actions">
         <button class="table-toggle" id="trendsTableToggle" aria-expanded="false">Show data table</button>
-        <span class="export-controls" id="exportRow" hidden>
-          <select id="exportFormat">
+        <span class="export-controls" hidden>
+          <select class="export-format">
             <option value="csv">CSV</option>
             <option value="tsv">TSV (tab-separated)</option>
             <option value="xlsx">Excel (.xlsx)</option>
             <option value="json">JSON</option>
           </select>
-          <button class="filter-reset" id="exportBtn" type="button">Export data</button>
+          <button class="filter-reset export-btn" type="button">Export data</button>
         </span>
       </div>
     </div>
@@ -595,7 +595,18 @@
 
     <div class="foot-row">
       <p class="note">Workouts ranked by average calories burned. Bars average across every logged session of that workout.</p>
-      <button class="table-toggle" id="workoutTableToggle" aria-expanded="false">Show data table</button>
+      <div class="foot-actions">
+        <button class="table-toggle" id="workoutTableToggle" aria-expanded="false">Show data table</button>
+        <span class="export-controls" hidden>
+          <select class="export-format">
+            <option value="csv">CSV</option>
+            <option value="tsv">TSV (tab-separated)</option>
+            <option value="xlsx">Excel (.xlsx)</option>
+            <option value="json">JSON</option>
+          </select>
+          <button class="filter-reset export-btn" type="button">Export data</button>
+        </span>
+      </div>
     </div>
     <div class="table-wrap" id="workoutTableWrap" hidden>
       <table>
@@ -691,9 +702,9 @@ function loadData(raw, sourceLabel){
     resetTrendFilters();
     resetWorkoutFilters();
     renderAll();
-    document.getElementById('exportRow').hidden = sourceLabel !== 'live';
+    document.querySelectorAll('.export-controls').forEach(el => { el.hidden = sourceLabel !== 'live'; });
   } catch (err) {
-    document.getElementById('exportRow').hidden = true;
+    document.querySelectorAll('.export-controls').forEach(el => { el.hidden = true; });
     setStatus('error', 'Could not read that file: ' + err.message);
   }
 }
@@ -904,10 +915,9 @@ function downloadBlob(content, filename, mime){
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
-function exportData(){
+function exportData(format){
   const rows = getExportRows();
   if (!rows.length) return;
-  const format = document.getElementById('exportFormat').value;
   const base = `lionheart-export-${new Date().toISOString().slice(0,10)}`;
   if (format === 'csv') downloadBlob(toDelimited(rows, ','), `${base}.csv`, 'text/csv');
   else if (format === 'tsv') downloadBlob(toDelimited(rows, '\t'), `${base}.tsv`, 'text/tab-separated-values');
@@ -920,7 +930,12 @@ function exportData(){
   }
 }
 
-document.getElementById('exportBtn').addEventListener('click', exportData);
+document.querySelectorAll('.export-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const select = btn.parentElement.querySelector('.export-format');
+    exportData(select.value);
+  });
+});
 
 // ---------- tabs ----------
 const tabTrends = document.getElementById('tabTrends');

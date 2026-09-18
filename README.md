@@ -15,8 +15,9 @@ history) so you can see how it works right away. Everything runs client-side
 in your browser — nothing is uploaded to a server.
 
 If you fetch your data directly from Lionheart, an **Export data** button
-appears on the Trends tab, next to "Show data table", letting you download
-that session history as CSV, TSV, Excel (.xlsx), or JSON.
+appears next to "Show data table" on both the Trends and By Workout tabs,
+letting you download that session history as CSV, TSV, Excel (.xlsx), or
+JSON.
 
 ## Files
 
