@@ -14,14 +14,17 @@ Opens with synthetic example data pre-loaded (not any real person's workout
 history) so you can see how it works right away. Everything runs client-side
 in your browser — nothing is uploaded to a server.
 
-If you use the "fetch directly from your F45 account" option, an **Export
-data** button appears on the Trends tab, next to "Show data table", letting
-you download that session history as CSV, TSV, Excel (.xlsx), or JSON.
+If you fetch your data directly from Lionheart, an **Export data** button
+appears on the Trends tab, next to "Show data table", letting you download
+that session history as CSV, TSV, Excel (.xlsx), or JSON.
 
 ## Files
 
 - `index.html` — the app itself. Open it directly, or serve it via GitHub
   Pages (see below).
+- `manual-export.html` — step-by-step instructions (and the copyable
+  script) for the manual export-and-upload path, linked from `index.html`'s
+  "How do I get my userid?" section.
 - `sample-lionheart-data.json` — dummy session data you can upload into the
   app to test the upload flow without needing your own F45 account.
 - `export-lionheart.js` — a standalone Node script that exports your own
@@ -31,8 +34,8 @@ you download that session history as CSV, TSV, Excel (.xlsx), or JSON.
   node export-lionheart.js YOUR_USER_ID
   ```
 - `cloudflare-worker/` — the Cloudflare Worker that `index.html` talks to for
-  the "fetch directly from your F45 account" option (it proxies the
-  Lionheart API so the browser can call it, and gates access with an
+  the "Fetch your session data directly from Lionheart" option (it proxies
+  the Lionheart API so the browser can call it, and gates access with an
   access token). See its [README](cloudflare-worker/README.md) if you want
   to run your own instead of the one baked into `index.html`.
 
@@ -61,14 +64,15 @@ but it shows up in your phone's own logs when you open the F45 app:
 
 From there, pick one:
 
-- **Export and upload** — run `export-lionheart.js` locally and upload the
-  resulting file into the app. Full steps are in the app itself, under "How
-  do I get my userid?". No setup beyond Node.js.
-- **Fetch directly** — use the "Or: fetch directly from your F45 account"
-  section in the app: enter the access token you were given, plus your
-  `user_id`, and it loads your history straight in, no download/upload step.
-  (If you don't have a token, ask whoever shared this dashboard with you, or
-  deploy your own Worker — see
+- **Fetch directly** — use the "Fetch your session data directly from
+  Lionheart" section in the app: enter the access token you were given, plus
+  your `user_id`, and it loads your history straight in, no download/upload
+  step. (If you don't have a token, ask whoever shared this dashboard with
+  you, or deploy your own Worker — see
   [cloudflare-worker/README.md](cloudflare-worker/README.md) — and update the
   `WORKER_URL` constant near the top of `index.html`'s script to point at
   it.)
+- **Export and upload** — see [manual-export.html](manual-export.html) (also
+  linked from the app's "How do I get my userid?" section) for the
+  step-by-step script instructions, then upload the resulting file into the
+  app. No setup beyond Node.js.
