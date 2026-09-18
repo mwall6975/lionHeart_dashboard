@@ -19,10 +19,19 @@ appears next to "Show data table" on both the Trends and By Workout tabs,
 letting you download that session history as CSV, TSV, Excel (.xlsx), or
 JSON.
 
+Tuned for phones too, and installable as an app: open it on iOS or Android
+and use the browser's "Add to Home Screen" (Safari) or "Install app"
+(Chrome) option to get a real home-screen icon and a standalone window, no
+app store needed. A small service worker (`sw.js`) caches the app shell so
+it still opens with no signal.
+
 ## Files
 
 - `index.html` — the app itself. Open it directly, or serve it via GitHub
   Pages (see below).
+- `manifest.json` / `sw.js` / `icons/` — PWA support (installability +
+  offline app-shell caching). `icons/generate_icons.py` regenerates the
+  icon PNGs if the design ever changes.
 - `manual-export.html` — step-by-step instructions (and the copyable
   script) for the manual export-and-upload path, linked from `index.html`'s
   "How do I get my userid?" section.
