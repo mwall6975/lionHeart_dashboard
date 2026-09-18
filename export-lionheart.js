@@ -7,14 +7,14 @@
  *   node export-lionheart.js <user_id> [output_file]
  *
  * Example:
- *   node export-lionheart.js 12429103 my-lionheart-data.json
+ *   node export-lionheart.js 12345678 my-lionheart-data.json
  *
  * Finding your user_id:
  *   There is no public way to look this up, but it shows up in your phone's
  *   own logs when you open the F45 app.
  *     Android: connect via USB with adb installed, run
  *       `adb logcat | grep externalId`, then open the F45 app - look for a
- *       line like `login(externalId: 12429103, jwtBearerToken: null)`.
+ *       line like `login(externalId: 12345678, jwtBearerToken: null)`.
  *       That number is your user_id.
  *     iPhone: same idea via Xcode's Window > Devices and Simulators, viewing
  *       your device's console log while opening the app and searching for

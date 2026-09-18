@@ -14,6 +14,10 @@ Opens with synthetic example data pre-loaded (not any real person's workout
 history) so you can see how it works right away. Everything runs client-side
 in your browser — nothing is uploaded to a server.
 
+If you use the "fetch directly from your F45 account" option, an **Export
+data** button appears, letting you download that session history as CSV,
+TSV, Excel (.xlsx), or JSON.
+
 ## Files
 
 - `index.html` — the app itself. Open it directly, or serve it via GitHub
@@ -45,7 +49,7 @@ but it shows up in your phone's own logs when you open the F45 app:
 
 - **Android** — connect via USB with [adb](https://developer.android.com/tools/adb)
   installed, run `adb logcat | grep externalId`, then open the F45 app and
-  look for a line like `login(externalId: 12429103, jwtBearerToken: null)`.
+  look for a line like `login(externalId: 12345678, jwtBearerToken: null)`.
   That number is your `user_id`.
 - **iPhone** — same idea via Xcode's Window → Devices and Simulators, viewing
   your device's console log while opening the app and searching for
@@ -59,7 +63,7 @@ From there, pick one:
 
 - **Export and upload** — run `export-lionheart.js` locally and upload the
   resulting file into the app. Full steps are in the app itself, under "How
-  do I get my export file?". No setup beyond Node.js.
+  do I get my userid?". No setup beyond Node.js.
 - **Fetch directly** — use the "Or: fetch directly from your F45 account"
   section in the app: enter the access token you were given, plus your
   `user_id`, and it loads your history straight in, no download/upload step.
