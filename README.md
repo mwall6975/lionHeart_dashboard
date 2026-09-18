@@ -15,8 +15,8 @@ history) so you can see how it works right away. Everything runs client-side
 in your browser — nothing is uploaded to a server.
 
 If you use the "fetch directly from your F45 account" option, an **Export
-data** button appears, letting you download that session history as CSV,
-TSV, Excel (.xlsx), or JSON.
+data** button appears on the Trends tab, next to "Show data table", letting
+you download that session history as CSV, TSV, Excel (.xlsx), or JSON.
 
 ## Files
 
