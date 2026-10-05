@@ -457,7 +457,7 @@
   <details class="howto">
     <summary>Fetch your session data directly from Lionheart</summary>
     <div class="howto-body">
-      <p>This dashboard talks to a Cloudflare Worker that proxies F45's Lionheart API (which doesn't allow browsers to call it directly). If you were given an <b>access token</b> for it, enter that and your <b>user_id</b> (see &ldquo;How do I get my userid?&rdquo; above) below to fetch your history directly &mdash; no file to download or upload.</p>
+      <p>This dashboard talks to a Cloudflare Worker that proxies F45's Lionheart API (which doesn't allow browsers to call it directly). A shared <b>access token</b> is already filled in below, so just enter your <b>user_id</b> (see &ldquo;How do I get my userid?&rdquo; above) and fetch your history directly &mdash; no file to download or upload.</p>
       <p>Want to run your own instead (e.g. you're forking this project)? The worker code and step-by-step setup are in the repo under <a href="https://github.com/mwall6975/lionHeart_dashboard/tree/main/cloudflare-worker" target="_blank" rel="noopener">cloudflare-worker/</a> &mdash; deploy it (free tier, a few minutes), then update the <code>WORKER_URL</code> constant near the top of this page's script to point at it.</p>
       <div class="worker-form">
         <div class="filter-field">
@@ -830,8 +830,10 @@ dropzone.addEventListener('drop', (e) => { handleFile(e.dataTransfer.files[0]); 
 
 // ---------- worker fetch wiring ----------
 // If you deploy your own Cloudflare Worker (see cloudflare-worker/), point
-// this at it instead of the default one.
+// this at it instead of the default one, and replace DEFAULT_WORKER_TOKEN
+// with your own worker's token (set via `wrangler secret put ACCESS_TOKEN`).
 const WORKER_URL = 'https://lionheart-proxy.mwall.workers.dev';
+const DEFAULT_WORKER_TOKEN = 'b7e0cb936ae1f4e6746f3132ef90e575';
 const WORKER_TOKEN_KEY = 'lionheartWorkerToken';
 const workerTokenInput = document.getElementById('workerTokenInput');
 const workerUserIdInput = document.getElementById('workerUserIdInput');
@@ -839,8 +841,10 @@ const workerFetchBtn = document.getElementById('workerFetchBtn');
 const workerFetchStatus = document.getElementById('workerFetchStatus');
 
 try {
-  workerTokenInput.value = localStorage.getItem(WORKER_TOKEN_KEY) || '';
-} catch {}
+  workerTokenInput.value = localStorage.getItem(WORKER_TOKEN_KEY) || DEFAULT_WORKER_TOKEN;
+} catch {
+  workerTokenInput.value = DEFAULT_WORKER_TOKEN;
+}
 
 function setWorkerError(msg){
   workerFetchStatus.className = 'worker-status error';
