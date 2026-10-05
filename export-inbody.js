@@ -113,6 +113,21 @@ async function login(apiBase, countryCode, loginId, password) {
   return { token: data.Token, uid };
 }
 
+async function getScanCount(apiBase, countryCode, token, uid) {
+  const payload = envelope(countryCode, {
+    UID: uid,
+    SyncDatetimeInBody: FULL_SYNC_DATETIME,
+    UseInBodyHomeDevice: 'false',
+  });
+  const res = await fetch(`${apiBase}/V2/InBody/GetInBodyDataTotalCount`, {
+    method: 'POST',
+    headers: authHeaders(token),
+    body: JSON.stringify(payload),
+  });
+  const data = await res.json();
+  return Number((data.Data || {}).InBodyDataCount || 0);
+}
+
 async function fetchScanPage(apiBase, countryCode, token, uid, index) {
   const payload = envelope(countryCode, {
     uid,
@@ -213,14 +228,15 @@ async function main() {
   console.log('Logging in...');
   const { token, uid } = await login(apiBase, countryCode, loginId, password);
 
-  console.log('Fetching your InBody scan history...');
+  const total = await getScanCount(apiBase, countryCode, token, uid);
+  console.log(`Fetching your ${total} InBody scans...`);
   const all = [];
   let index = 0;
-  while (true) {
+  while (index < total) {
     const page = await fetchScanPage(apiBase, countryCode, token, uid, index);
-    if (page.length === 0) break;
+    if (page.length === 0) break; // safety net; shouldn't happen since index < total
     all.push(...page);
-    console.log(`  fetched ${all.length} scans so far...`);
+    console.log(`  fetched ${all.length} of ${total} scans so far...`);
     index += page.length;
     await new Promise((r) => setTimeout(r, 250)); // be polite
   }
