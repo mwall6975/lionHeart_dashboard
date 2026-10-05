@@ -457,13 +457,9 @@
   <details class="howto">
     <summary>Fetch your session data directly from Lionheart</summary>
     <div class="howto-body">
-      <p>This dashboard talks to a Cloudflare Worker that proxies F45's Lionheart API (which doesn't allow browsers to call it directly). A shared <b>access token</b> is already filled in below, so just enter your <b>user_id</b> (see &ldquo;How do I get my userid?&rdquo; above) and fetch your history directly &mdash; no file to download or upload.</p>
-      <p>Want to run your own instead (e.g. you're forking this project)? The worker code and step-by-step setup are in the repo under <a href="https://github.com/mwall6975/lionHeart_dashboard/tree/main/cloudflare-worker" target="_blank" rel="noopener">cloudflare-worker/</a> &mdash; deploy it (free tier, a few minutes), then update the <code>WORKER_URL</code> constant near the top of this page's script to point at it.</p>
+      <p>This dashboard talks to a Cloudflare Worker that proxies F45's Lionheart API (which doesn't allow browsers to call it directly). Just enter your <b>user_id</b> (see &ldquo;How do I get my userid?&rdquo; above) and fetch your history directly &mdash; no file to download or upload.</p>
+      <p>Want to run your own instead (e.g. you're forking this project)? The worker code and step-by-step setup are in the repo under <a href="https://github.com/mwall6975/lionHeart_dashboard/tree/main/cloudflare-worker" target="_blank" rel="noopener">cloudflare-worker/</a> &mdash; deploy it (free tier, a few minutes), then update the <code>WORKER_URL</code> and <code>DEFAULT_WORKER_TOKEN</code> constants near the top of this page's script to point at it.</p>
       <div class="worker-form">
-        <div class="filter-field">
-          <label for="workerTokenInput">Access Token</label>
-          <input type="text" id="workerTokenInput" placeholder="your access token">
-        </div>
         <div class="filter-field">
           <label for="workerUserIdInput">User ID</label>
           <input type="text" id="workerUserIdInput" placeholder="12345678" inputmode="numeric">
@@ -834,17 +830,9 @@ dropzone.addEventListener('drop', (e) => { handleFile(e.dataTransfer.files[0]); 
 // with your own worker's token (set via `wrangler secret put ACCESS_TOKEN`).
 const WORKER_URL = 'https://lionheart-proxy.mwall.workers.dev';
 const DEFAULT_WORKER_TOKEN = 'b7e0cb936ae1f4e6746f3132ef90e575';
-const WORKER_TOKEN_KEY = 'lionheartWorkerToken';
-const workerTokenInput = document.getElementById('workerTokenInput');
 const workerUserIdInput = document.getElementById('workerUserIdInput');
 const workerFetchBtn = document.getElementById('workerFetchBtn');
 const workerFetchStatus = document.getElementById('workerFetchStatus');
-
-try {
-  workerTokenInput.value = localStorage.getItem(WORKER_TOKEN_KEY) || DEFAULT_WORKER_TOKEN;
-} catch {
-  workerTokenInput.value = DEFAULT_WORKER_TOKEN;
-}
 
 function setWorkerError(msg){
   workerFetchStatus.className = 'worker-status error';
@@ -852,22 +840,16 @@ function setWorkerError(msg){
 }
 
 async function fetchFromWorker(){
-  const token = workerTokenInput.value.trim();
   const userId = workerUserIdInput.value.trim();
   workerFetchStatus.className = 'worker-status';
-  if (!token) return setWorkerError('Enter your Worker\'s access token.');
   if (!userId) return setWorkerError('Enter your Lionheart user_id.');
-
-  try {
-    localStorage.setItem(WORKER_TOKEN_KEY, token);
-  } catch {}
 
   workerFetchBtn.disabled = true;
   workerFetchStatus.textContent = 'Fetching your session history…';
   try {
     const sep = WORKER_URL.includes('?') ? '&' : '?';
     const res = await fetch(`${WORKER_URL}${sep}user_id=${encodeURIComponent(userId)}`, {
-      headers: { 'X-Access-Token': token },
+      headers: { 'X-Access-Token': DEFAULT_WORKER_TOKEN },
     });
     const body = await res.json().catch(() => null);
     if (!res.ok) throw new Error((body && body.error) || `Request failed (${res.status})`);
