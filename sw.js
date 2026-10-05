@@ -1,10 +1,11 @@
-const CACHE_NAME = 'lionheart-v1';
+const CACHE_NAME = 'lionheart-v2';
 const APP_SHELL = [
   './',
   './index.html',
   './manual-export.html',
   './manifest.json',
   './sample-lionheart-data.json',
+  './sample-inbody-data.json',
   './icons/icon-192.png',
   './icons/icon-512.png',
 ];
