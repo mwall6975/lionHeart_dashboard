@@ -3,21 +3,24 @@
 Uses the F45 Lionheart monitor session data for a dashboard.
 
 A single self-contained web app (`index.html`, no build step, no backend) that
-turns your F45 Lionheart workout history into two views:
+turns your F45 Lionheart workout history into three views:
 
 - **Trends** — heart rate, calories, class score, and HR zone-time breakdown
-  over time
+  over time (with your InBody scan dates marked on the heart-rate, calorie,
+  and score charts, if you've loaded Body Composition data too)
 - **By Workout** — the same metrics compared across your distinct F45 workout
   types
+- **Body Composition** — weight, body fat %, and skeletal muscle mass over
+  time from your InBody scan history, uploaded separately from your
+  Lionheart data (see below)
 
 Opens with synthetic example data pre-loaded (not any real person's workout
-history) so you can see how it works right away. Everything runs client-side
-in your browser — nothing is uploaded to a server.
+or scan history) so you can see how it works right away. Everything runs
+client-side in your browser — nothing is uploaded to a server.
 
-If you fetch your data directly from Lionheart, an **Export data** button
-appears next to "Show data table" on both the Trends and By Workout tabs,
-letting you download that session history as CSV, TSV, Excel (.xlsx), or
-JSON.
+If you fetch your Lionheart data directly, or upload an InBody export, an
+**Export data** button appears next to "Show data table" on the relevant
+tab(s), letting you download that data as CSV, TSV, Excel (.xlsx), or JSON.
 
 Tuned for phones too, and installable as an app: open it on iOS or Android
 and use the browser's "Add to Home Screen" (Safari) or "Install app"
@@ -43,11 +46,31 @@ it still opens with no signal.
   ```
   node export-lionheart.js YOUR_USER_ID
   ```
+- `sample-inbody-data.json` — dummy InBody scan history you can upload into
+  the Body Composition tab to test it without an InBody account.
+- `export-inbody.js` — a standalone Node script that logs in to InBody (same
+  phone number + password as the mobile app) and exports your scan history
+  to a JSON file you can upload into the Body Composition tab. Requires Node
+  18+, no dependencies. Usage:
+  ```
+  node export-inbody.js
+  ```
+  It prompts for your phone number, country code, and password (hidden as
+  you type) interactively; set `INBODY_LOGIN_ID` / `INBODY_LOGIN_PW` /
+  `INBODY_COUNTRY_CODE` as environment variables instead for non-interactive
+  use. Your password is typed locally and sent only to InBody's own servers
+  — this talks to the same reverse-engineered mobile API documented by the
+  open-source [inbody-api-mcp](https://github.com/rwestergren/inbody-api-mcp)
+  project, not an official InBody API (there isn't one).
 - `cloudflare-worker/` — the Cloudflare Worker that `index.html` talks to for
   the "Fetch your session data directly from Lionheart" option (it proxies
   the Lionheart API so the browser can call it, and gates access with an
   access token). See its [README](cloudflare-worker/README.md) if you want
-  to run your own instead of the one baked into `index.html`.
+  to run your own instead of the one baked into `index.html`. There is no
+  equivalent direct-fetch option for InBody data — that API requires a real
+  password rather than a guessable ID, so proxying it through a Worker would
+  mean handling that password server-side, which this project deliberately
+  avoids. Script-and-upload is the only supported path for InBody data.
 
 ## Running it
 
